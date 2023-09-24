@@ -57,3 +57,6 @@ bot.on('spawn',function() {
     connected=1;
 });
 
+// Log errors and kick reasons:
+bot.on('kicked', console.log)
+bot.on('error', console.log)
