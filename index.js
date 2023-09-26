@@ -20,7 +20,7 @@ function updateLine(message){
 */
 
 function printPing(bot) {
-	console.log(getLogDate() + " Ping: " + bot.player.ping);
+	console.log("Ping: " + bot.player.ping);
 }
 
 const mineflayer = require('mineflayer')
