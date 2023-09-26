@@ -11,14 +11,16 @@ function getLogDate() {
 require('log-timestamp')(function() { 
  return getLogDate() + ' %s' });
 
+/*
 function updateLine(message){
     process.stdout.clearLine(0);
     process.stdout.cursorTo(0);
 	process.stdout.write(message);
 }
+*/
 
 function printPing(bot) {
-	updateLine(getLogDate() + " Ping: " + bot.player.ping);
+	console.log(getLogDate() + " Ping: " + bot.player.ping);
 }
 
 const mineflayer = require('mineflayer')
